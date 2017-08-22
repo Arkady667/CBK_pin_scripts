@@ -1,0 +1,275 @@
+*****************************************************************
+Pin Report - Date: Tue Jun 13 15:57:24 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.7
+Version: 11.7.0.119
+Design Name: P3_DPU
+Family: ProASIC3L
+Die: RT3PE3000L
+Package: 256 CQFP
+*****************************************************************
+
+-----------------------------------------------------------------
+Flash*Freeze information
+        Pin name  : 69
+        Pin usage : Available as a regular pin
+-----------------------------------------------------------------
+
+Number |Port          |Function            |State      |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-------|--------------|--------------------|-----------|--------|------------------|-----|--------------|----------------|------------|-----|-----------------|------------|--------------|
+1                      VCCPLA               Reserved
+2                      VCOMPLA              Reserved
+3                      GNDQ                 Reserved
+4                      VCCIB7               Reserved
+5       iSpw0Stb       GAB2/IO308PDB7V4     Special     LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+6       iSpw0Dat       IO308NDB7V4          Fixed       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+7       oSpw0Stb       GAA2/IO309PDB7V4     Special     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+8       oSpw0Dat       IO309NDB7V4          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+9                      VCC                  Reserved
+10                     GND                  Reserved
+11                     VCCIB7               Reserved
+12                     IO304PDB7V3          Unassigned
+13      oUartTx        IO304NDB7V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+14                     IO299PDB7V3          Unassigned
+15                     IO299NDB7V3          Unassigned
+16      iUartRx        IO296PDB7V2          Fixed       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+17                     IO296NDB7V2          Unassigned
+18      oPWIrq         IO291PDB7V2          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+19      oIDCIrq        IO291NDB7V2          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+20                     VCC                  Reserved
+21                     GND                  Reserved
+22                     VCCIB7               Reserved
+23                     IO288PDB7V1          Unassigned
+24                     IO288NDB7V1          Unassigned
+25      oLvdsEnB_n     IO283PDB7V1          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+26      oPwValidB      IO283NDB7V1          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+27      oPwClkB        IO280PDB7V0          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+28      oPwDataB       IO280NDB7V0          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+29                     GFC1/IO275PDB7V0     Special
+30                     GFC0/IO275NDB7V0     Special
+31                     GND                  Reserved
+32                     VCOMPLF              Reserved
+33                     VCCPLF               Reserved
+34                     GND                  Reserved
+35      oSRAMAddr[0]   IO267PDB6V4          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+36      oSRAMAddr[1]   IO267NDB6V4          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+37      oSRAMAddr[2]   GFA0/IO273NDB6V4     Special     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+38      oSRAMAddr[3]   GFA1/IO273PDB6V4     Special     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+39      oSRAMAddr[4]   IO259PDB6V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+40      oSRAMAddr[5]   IO259NDB6V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+41      oSRAMAddr[6]   IO264PDB6V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+42      oSRAMAddr[7]   IO264NDB6V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+43                     VCC                  Reserved
+44                     GND                  Reserved
+45                     VCCIB6               Reserved
+46      oSRAMAddr[8]   IO251PDB6V2          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+47      oSRAMAddr[9]   IO251NDB6V2          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+48      oSRAMAddr[10]  IO256PDB6V2          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+49      oSRAMAddr[11]  IO256NDB6V2          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+50      oSRAMAddr[12]  IO243PDB6V1          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+51      oSRAMAddr[13]  IO243NDB6V1          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+52      oSRAMAddr[14]  IO248PDB6V1          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+53      oSRAMAddr[15]  IO248NDB6V1          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+54                     VCC                  Reserved
+55                     GND                  Reserved
+56                     VCCIB6               Reserved
+57      oSRAMAddr[16]  GEB1/IO235PDB6V0     Special     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+58      oSRAMAddr[17]  GEB0/IO235NDB6V0     Special     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+59      oSRAMAddr[18]  IO240PDB6V0          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+60                     IO240NDB6V0          Unassigned
+61                     VCCIB6               Reserved
+62                     GNDQ                 Reserved
+63                     VCOMPLE              Reserved
+64                     VCCPLE               Reserved
+65                     GNDQ                 Reserved
+66      bSRAMData[0]   IO233NDB5V4          Fixed       LVTTL    8                  High  None           No               Off          No    35                No           Yes
+67      bSRAMData[1]   GEA2/IO233PDB5V4     Special     LVTTL    8                  High  None           No               Off          No    35                No           Yes
+68      bSRAMData[2]   IO232NDB5V4          Fixed       LVTTL    8                  High  None           No               Off          No    35                No           Yes
+69      bSRAMData[3]   FF/GEB2/IO232PDB5V4  Special     LVTTL    8                  High  None           No               Off          No    35                No           Yes
+70                     VCC                  Reserved
+71                     GND                  Reserved
+72                     VCCIB5               Reserved
+73      bSRAMData[4]   IO223NDB5V3          Fixed       LVTTL    8                  High  None           No               Off          No    35                No           Yes
+74      bSRAMData[5]   IO223PDB5V3          Fixed       LVTTL    8                  High  None           No               Off          No    35                No           Yes
+75      bSRAMData[6]   IO226NDB5V4          Fixed       LVTTL    8                  High  None           No               Off          No    35                No           Yes
+76      bSRAMData[7]   IO226PDB5V4          Fixed       LVTTL    8                  High  None           No               Off          No    35                No           Yes
+77      oSRAMCE_n      IO215NDB5V2          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+78      oSRAMWE_n      IO215PDB5V2          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+79      oSRAMOE_n      IO218NDB5V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+80                     IO218PDB5V3          Unassigned
+81                     GND                  Reserved
+82                     VCCIB5               Reserved
+83                     IO207NDB5V1          Unassigned
+84                     IO207PDB5V1          Unassigned
+85      iPcuMisoMuxA   IO210NDB5V2          Fixed       LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+86      iAeuMisoMuxB   IO210PDB5V2          Fixed       LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+87      oFpgaMux       IO199NDB5V0          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+88      iFpgaMux       IO199PDB5V0          Fixed       LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+89                     VCC                  Reserved
+90                     GND                  Reserved
+91                     VCCIB5               Reserved
+92                     IO202NDB5V1          Unassigned
+93      iCpuCe0        IO202PDB5V1          Fixed       LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+94      iCpuCe1        IO194NDB5V0          Fixed       LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+95      oBufEn         IO194PDB5V0          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+96                     IO192NDB4V4          Unassigned
+97                     IO192PDB4V4          Unassigned
+98                     IO186NDB4V4          Unassigned
+99                     IO186PDB4V4          Unassigned
+100                    VCC                  Reserved
+101                    GND                  Reserved
+102                    VCCIB4               Reserved
+103                    IO183NDB4V3          Unassigned
+104                    IO183PDB4V3          Unassigned
+105                    IO178NDB4V3          Unassigned
+106                    IO178PDB4V3          Unassigned
+107                    IO175NDB4V2          Unassigned
+108                    IO175PDB4V2          Unassigned
+109                    GND                  Reserved
+110                    VCCIB4               Reserved
+111                    IO170NDB4V2          Unassigned
+112                    IO170PDB4V2          Unassigned
+113                    IO167NDB4V1          Unassigned
+114                    IO167PDB4V1          Unassigned
+115                    IO162NDB4V1          Unassigned
+116                    IO162PDB4V1          Unassigned
+117                    IO159NDB4V0          Unassigned
+118                    IO159PDB4V0          Unassigned
+119                    VCC                  Reserved
+120                    GND                  Reserved
+121                    VCCIB4               Reserved
+122                    IO154NDB4V0          Unassigned
+123                    GDA2/IO154PDB4V0     Special
+124                    GDB2/IO155PSB4V0     Special
+125                    GNDQ                 Reserved
+126                    TCK                  Reserved
+127                    TDI                  Reserved
+128                    TMS                  Reserved
+129                    VCCPLD               Reserved
+130                    VCOMPLD              Reserved
+131                    VPUMP                Reserved
+132                    GNDQ                 Reserved
+133                    TDO                  Reserved
+134                    TRST                 Reserved
+135                    VJTAG                Reserved
+136     oLvdsEnA_n     GDB0/IO152NDB3V4     Special     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+137     oPwValidA      GDB1/IO152PDB3V4     Special     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+138     oPwClkA        IO139NDB3V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+139     oPwDataA       IO139PDB3V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+140                    VCCIB3               Reserved
+141                    GND                  Reserved
+142                    VCC                  Reserved
+143                    IO144NDB3V3          Unassigned
+144                    IO144PDB3V3          Unassigned
+145                    IO131NDB3V2          Unassigned
+146                    IO131PDB3V2          Unassigned
+147                    IO136NDB3V2          Unassigned
+148                    IO136PDB3V2          Unassigned
+149                    VCCIB3               Reserved
+150                    GND                  Reserved
+151                    VCC                  Reserved
+152                    IO128NDB3V1          Unassigned
+153                    IO128PDB3V1          Unassigned
+154                    IO123NDB3V1          Unassigned
+155                    IO123PDB3V1          Unassigned
+156                    IO120NDB3V0          Unassigned
+157                    IO120PDB3V0          Unassigned
+158                    GCA1/IO114PDB3V0     Special
+159     iExtRst_n      GCA0/IO114NDB3V0     Special     LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+160                    GND                  Reserved
+161                    VCCPLC               Reserved
+162                    VCOMPLC              Reserved
+163                    GND                  Reserved
+164     iSpsAdcA12     GCB1/IO113PSB2V3     Special     LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+165     iSpsAdcA34     GCC0/IO112NDB2V3     Special     LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+166     oSpsDinA       GCC1/IO112PDB2V3     Special     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+167     oSpsSclkA      IO107NDB2V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+168     oSpsCsA_n      IO107PDB2V3          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+169                    IO104NDB2V2          Unassigned
+170     oSpsEnA        IO104PDB2V2          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+171                    IO99NDB2V2           Unassigned
+172     iSpsAdcB12     IO99PDB2V2           Fixed       LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+173                    VCCIB2               Reserved
+174                    GND                  Reserved
+175                    VCC                  Reserved
+176     iSpsAdcB34     IO96NDB2V1           Fixed       LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+177     oSpsDinB       IO96PDB2V1           Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+178     oSpsSclkB      IO91NDB2V1           Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+179     oSpsCsB_n      IO91PDB2V1           Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+180                    IO88NDB2V0           Unassigned
+181     oSpsEnB        IO88PDB2V0           Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+182                    VCCIB2               Reserved
+183                    GND                  Reserved
+184                    VCC                  Reserved
+185     iSpsTrig       IO83NDB2V0           Fixed       LVTTL    ---                ---   Down           No               Off          ---   ---               No           Yes
+186                    GBB2/IO83PDB2V0      Special
+187                    IO82NDB2V0           Unassigned
+188     iClk           GBA2/IO82PDB2V0      Special     LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+189                    VCCIB2               Reserved
+190                    GNDQ                 Reserved
+191                    VCOMPLB              Reserved
+192                    VCCPLB               Reserved
+193                    GNDQ                 Reserved
+194                    GBA1/IO81PDB1V4      Special
+195                    GBA0/IO81NDB1V4      Special
+196                    GBB1/IO80PDB1V4      Special
+197                    GBB0/IO80NDB1V4      Special
+198                    VCCIB1               Reserved
+199                    GND                  Reserved
+200                    VCC                  Reserved
+201                    IO75PDB1V4           Unassigned
+202                    IO75NDB1V4           Unassigned
+203                    IO72PDB1V3           Unassigned
+204                    IO72NDB1V3           Unassigned
+205                    IO67PDB1V3           Unassigned
+206                    IO67NDB1V3           Unassigned
+207                    VCCIB1               Reserved
+208                    GND                  Reserved
+209                    IO64PDB1V2           Unassigned
+210                    IO64NDB1V2           Unassigned
+211                    IO59PDB1V2           Unassigned
+212                    IO59NDB1V2           Unassigned
+213                    IO56PDB1V1           Unassigned
+214     oSpsEn         IO56NDB1V1           Assigned    LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+215                    IO51PDB1V1           Unassigned
+216                    IO51NDB1V1           Unassigned
+217                    VCCIB1               Reserved
+218                    GND                  Reserved
+219                    VCC                  Reserved
+220                    IO48PDB1V0           Unassigned
+221                    IO48NDB1V0           Unassigned
+222                    IO42PDB1V0           Unassigned
+223                    IO42NDB1V0           Unassigned
+224                    IO40PDB0V4           Unassigned
+225                    IO40NDB0V4           Unassigned
+226                    IO32PDB0V3           Unassigned
+227                    IO32NDB0V3           Unassigned
+228                    VCCIB0               Reserved
+229                    GND                  Reserved
+230                    VCC                  Reserved
+231                    IO35PDB0V4           Unassigned
+232                    IO35NDB0V4           Unassigned
+233                    IO24PDB0V2           Unassigned
+234                    IO24NDB0V2           Unassigned
+235                    IO27PDB0V3           Unassigned
+236                    IO27NDB0V3           Unassigned
+237                    IO16PDB0V1           Unassigned
+238                    IO16NDB0V1           Unassigned
+239                    VCCIB0               Reserved
+240                    GND                  Reserved
+241                    IO19PDB0V2           Unassigned
+242                    IO19NDB0V2           Unassigned
+243                    IO08PDB0V0           Unassigned
+244                    IO08NDB0V0           Unassigned
+245                    IO11PDB0V1           Unassigned
+246                    IO11NDB0V1           Unassigned
+247                    GAC1/IO02PDB0V0      Special
+248                    GAC0/IO02NDB0V0      Special
+249                    VCCIB0               Reserved
+250                    GND                  Reserved
+251                    VCC                  Reserved
+252                    GAB1/IO01PDB0V0      Special
+253                    GAB0/IO01NDB0V0      Special
+254                    GAA1/IO00PDB0V0      Special
+255                    GAA0/IO00NDB0V0      Special
+256                    GNDQ                 Reserved
