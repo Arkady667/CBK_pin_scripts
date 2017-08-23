@@ -14,15 +14,30 @@ def read_file(path):
     :param path:  File path (file name)
     :return: None
     """
+    pin_data_number = 14
+    i = 0
+    j = 0
     try:
         f = open(path, mode="rt")
         for pin in f.readlines():
-            #add_pin(pin)
-            pin_report_file.append(pin)
+            i += 1
+            if i >= 20:
+                pin_one_space = " ".join(pin.split()) # usuwa wszystkie zbedne spacje i rozdziela tym samym pola tylko jedna spacja
+                pin_data = pin_one_space.split(" ")
+                if len(pin_data) < pin_data_number:
+                    pin_data_len = len(pin_data)
+                    loop_iter = pin_data_number - pin_data_len
+                    while j < loop_iter:
+                        pin_data.append("-")
+                        j += 1
+                add_pin(pin_data[0], pin_data[1], pin_data[2], pin_data[3], pin_data[4], pin_data[5], pin_data[6], pin_data[7], pin_data[8], pin_data[9], pin_data[10], pin_data[11], pin_data[12], pin_data[13])
+                j = 0
+                continue
         f.close()
     except Exception as error:
         print("Could not read file")
         print(error)
+
 
 
 def print_report_pin_number():
@@ -30,11 +45,11 @@ def print_report_pin_number():
         print(index)
 
 
-def search_assaign():
+def search_assigned():
     flag = 0
     for file in pin_report_file:
-        if bool("Assigned" in file):
-            print("Assigned state found in \n {0} ".format(file))
+        if file["state"] == "Assigned":
+            print("Port " + file["port"] + " has 'Assigned' state.")
             flag = 1
             continue
     if flag == 0:
@@ -64,7 +79,7 @@ def add_pin(number, port, function, state, schmitt, inputDelay, skew, outputLoad
         "number": number,
         "port": port,
         "function": function,
-        "stare": state,
+        "state": state,
         "ioStd": ioStd,
         "oDrive": oDrive,
         "slew": slew,
@@ -87,8 +102,7 @@ def main(path):
     """
 
     read_file(path)
-    print(" Number |Port          |Function            |State      |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |")
-    search_assaign()
+    search_assigned()
 
 
 if __name__ == "__main__":

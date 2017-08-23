@@ -17,7 +17,7 @@ Flash*Freeze information
 
 Port          |Pin |Fixed |Function            |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
 --------------|----|------|--------------------|--------|------------------|-----|--------------|----------------|------------|-----|-----------------|------------|--------------|
-bSRAMData[0]   66   Yes    IO233NDB5V4          LVTTL    8                  High  None           No               Off          No    35                No           Yes
+bSRAMData[0]   66   Yes    IO233NDB5V4          LVDS     8                  High  None           No               Off          No    35                No           Yes
 bSRAMData[1]   67   Yes    GEA2/IO233PDB5V4     LVTTL    8                  High  None           No               Off          No    35                No           Yes
 bSRAMData[2]   68   Yes    IO232NDB5V4          LVTTL    8                  High  None           No               Off          No    35                No           Yes
 bSRAMData[3]   69   Yes    FF/GEB2/IO232PDB5V4  LVTTL    8                  High  None           No               Off          No    35                No           Yes
@@ -68,7 +68,7 @@ oSRAMAddr[1]   36   Yes    IO267NDB6V4          LVTTL    8                  High
 oSRAMAddr[2]   37   Yes    GFA0/IO273NDB6V4     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
 oSRAMAddr[3]   38   Yes    GFA1/IO273PDB6V4     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
 oSRAMAddr[4]   39   Yes    IO259PDB6V3          LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
-oSRAMAddr[5]   40   Yes    IO259NDB6V3          LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+oSRAMAddr[5]   40   Yes    IO259NDB6V3          LVDS     8                  High  None           ---              ---          ---   35                No           Yes
 oSRAMAddr[6]   41   Yes    IO264PDB6V3          LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
 oSRAMAddr[7]   42   Yes    IO264NDB6V3          LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
 oSRAMAddr[8]   46   Yes    IO251PDB6V2          LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
@@ -85,4 +85,4 @@ oSRAMAddr[18]  59   Yes    IO240PDB6V0          LVTTL    8                  High
 oSRAMCE_n      77   Yes    IO215NDB5V2          LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
 oSRAMOE_n      79   Yes    IO218NDB5V3          LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
 oSRAMWE_n      78   Yes    IO215PDB5V2          LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
-oUartTx        13   Yes    IO304NDB7V3          LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+oUartTx        13   Yes    IO304NDB7V3          LVDS     8                  High  None           ---              ---          ---   35                No           Yes

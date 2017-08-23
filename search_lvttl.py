@@ -1,3 +1,4 @@
+# coding=utf-8
 # python2
 
 """TODO
@@ -14,11 +15,16 @@ def read_file(path):
     :param path:  File path (file name)
     :return: None
     """
+    i = 0
     try:
         f = open(path, mode="rt")
         for pin in f.readlines():
-            #add_pin(pin)
-            pin_report_file.append(pin)
+            i += 1
+            if i >= 20:
+                pin_one_space = " ".join(pin.split()) # usuwa wszystkie zbedne spacje i rozdziela tym samym pola tylko jedna spacja
+                pin_data = pin_one_space.split(" ")
+                add_pin(pin_data[0], pin_data[1], pin_data[2], pin_data[3], pin_data[4], pin_data[5], pin_data[6], pin_data[7], pin_data[8], pin_data[9], pin_data[10], pin_data[11], pin_data[12], pin_data[13])
+                continue
         f.close()
     except Exception as error:
         print("Could not read file")
@@ -33,22 +39,22 @@ def print_report_pin_number():
 def search_LVTTL():
     flag = 0
     for file in pin_report_file:
-        if bool("Fixed" or "Special" or "Assigned" in file) and not bool("LVTTL" in file):
-            print("Pin {0} \n Isn't in LVTTL I/O Standard ".format(file))
-            flag = 1
-            continue
+        if file["ioStd"] != "LVTTL":
+        # if not bool("LVTTL" in file):
+           print("Port " + file["port"] + " is in " + file["ioStd"] + " I/O Standard. Should be in LVTTL. ")
+           flag = 1
+           continue
     if flag == 0:
-        print("All pins are in LVTTL I/O Standard")
+        print("All pins are in LVTTL I/O Standard\n")
 
 
-
-def add_pin(number, port, function, state, schmitt, inputDelay, skew, outputLoad, ioStd="LVTTL", oDrive=8, slew="High", resistorPull="None", ioReg="No", hotSwappable="Yes"):
+def add_pin(port, pin, fixed, function, ioStd, oDrive, slew, resistorPull, schmitt, inputDelay, skew, outputLoad, ioReg, hotSwappable):
     """TODO
 
-    :param number:
+    :param pin:
     :param port:
     :param function:
-    :param state:
+    :param fixed:
     :param ioStd:
     :param oDrive:
     :param slew:
@@ -62,10 +68,10 @@ def add_pin(number, port, function, state, schmitt, inputDelay, skew, outputLoad
     :return:
     """
     pin = {
-        "number": number,
         "port": port,
+        "pin": pin,
+        "fixed": fixed,
         "function": function,
-        "stare": state,
         "ioStd": ioStd,
         "oDrive": oDrive,
         "slew": slew,
@@ -86,10 +92,7 @@ def main(path):
 
     :param path:  File path (file name)
     """
-
     read_file(path)
-    print(" Number |Port          |Function            |State      |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |")
-    search_assaign()
     search_LVTTL()
 
 if __name__ == "__main__":

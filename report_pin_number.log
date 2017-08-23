@@ -23,7 +23,7 @@ Number |Port          |Function            |State      |I/O Std |Output Drive (m
 4                      VCCIB7               Reserved
 5       iSpw0Stb       GAB2/IO308PDB7V4     Special     LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
 6       iSpw0Dat       IO308NDB7V4          Fixed       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
-7       oSpw0Stb       GAA2/IO309PDB7V4     Special     LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
+7       oSpw0Stb       GAA2/IO309PDB7V4     Special     LVTTL     8                  High  None           ---              ---          ---   35                No           Yes
 8       oSpw0Dat       IO309NDB7V4          Fixed       LVTTL    8                  High  None           ---              ---          ---   35                No           Yes
 9                      VCC                  Reserved
 10                     GND                  Reserved
