@@ -19,19 +19,28 @@ def read_file(file_name):
     :param file_name:  log file name
     :return: None
     """
+    # Number of arguments in add_pin (Number of pin parameters)
     pin_data_number = 14
+    # Indexes
     i = 0
     j = 0
     try:
+        # Reads text file, line by line
         f = open(file_name, mode="rt")
         for pin in f.readlines():
+            # condition to bypass first 20 lines, which contain useless data.
             i += 1
             if i >= 20:
+                # Deletes large number of spaces and replace with one space and assign data to pin_one_space.
                 pin_one_space = " ".join(pin.split())
+                # Separates pin parameters and save each one of them as one list element (pin_data).
                 pin_data = pin_one_space.split(" ")
+                # Condition checks length of list element. Required 14 elements.
                 if len(pin_data) < pin_data_number:
+                    # Simple formula to count how many elements are missing
                     pin_data_len = len(pin_data)
                     loop_iter = pin_data_number - pin_data_len
+                    # Loop fills pin_data list to achieve required number of list elements (14)
                     while j < loop_iter:
                         pin_data.append("-")
                         j += 1
@@ -50,7 +59,7 @@ def print_report_pin_number():
 
 
 def add_pin(number, port, function, state, ioStd, oDrive, slew, resistorPull, schmitt, inputDelay, skew, outputLoad, ioReg, hotSwappable):
-    """Addes raw data to structure (dictionary)
+    """Adds raw data to structure (dictionary), and adds one pin with all data to pin_report_file list as one list element
 
     :param number: Ordinal number [integer]
     :param port: Port name [custom name]
@@ -143,15 +152,13 @@ def result(result_assigned, result_lvttl):
     else:
         print("Test I/O Standard: PASSED ")
 
-
-
-
 ##############   Main    ##############
+
 
 def main(file_name):
     """Execution function
 
-    :param path:  File path (file name)
+    :param file_name:  File path (file name)
     :return: None
     """
     print("\n")
